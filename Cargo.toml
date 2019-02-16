@@ -3,13 +3,12 @@ name    = "ffmpeg-next"
 version = "0.2.0"
 build   = "build.rs"
 
-authors = ["meh. <meh@schizofreni.co>", "Zhiming Wang <i@zhimingwang.org>"]
-license = "WTFPL"
+authors = ["meh. <meh@schizofreni.co>", "Zhiming Wang <i@zhimingwang.org>", "Adrian Kündig <adriankue@gmail.com"]
+license = "MIT"
 
 description   = "Safe FFmpeg wrapper (FFmpeg 4 compatible fork of the ffmpeg crate)"
-documentation = "https://docs.rs/ffmpeg-next"
-homepage      = "https://github.com/zmwangx/rust-ffmpeg#readme"
-repository    = "https://github.com/zmwangx/rust-ffmpeg"
+homepage      = "https://github.com/akuendig/rust-ffmpeg#readme"
+repository    = "https://github.com/akuendig/rust-ffmpeg"
 readme        = "README.md"
 keywords      = ["ffmpeg", "multimedia", "video", "audio"]
 categories    = ["multimedia"]
@@ -93,13 +92,13 @@ software-resampling = ["ffmpeg-sys/swresample"]
 software-scaling    = ["ffmpeg-sys/swscale", "codec"]
 
 [dependencies]
-libc     = "0.2"
-bitflags = "0.9"
+libc     = "0.2.48"
+bitflags = "1.0.4"
 
 [dependencies.image]
-version  = "0.12"
+version  = "0.21.0"
 optional = true
 
 [dependencies.ffmpeg-sys]
-version = "3.3"
+version = "3.4.1"
 default-features = false
