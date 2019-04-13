@@ -28,7 +28,7 @@ pub fn converter(
         output,
         width,
         height,
-        scaling::flag::FAST_BILINEAR,
+        scaling::Flags::FAST_BILINEAR,
     )
 }
 
